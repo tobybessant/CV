@@ -1,9 +1,16 @@
 \documentclass[1pt]{article}
-\usepackage{array, xcolor, lipsum, bibentry}
-\usepackage[margin=2cm]{geometry}
+\usepackage{array, xcolor}
+\usepackage[margin=2cm, bottom=2em]{geometry}
+\usepackage{nopageno}
 \setlength{\voffset}{-0.75in}
+
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\usepackage{blindtext}
+\usepackage{lastpage}
+\cfoot{\thepage\ of \pageref{LastPage}}
  
-\title{\bfseries\Huge Toby Bessant - CV\vspace{-1.5em}}
+\title{\bfseries\Huge Toby Bessant - Curriculum Vitae\vspace{-1.5em}}
 \date{}
 
 % remove line-broken words
@@ -13,6 +20,7 @@
 \newcolumntype{L}{>{\raggedleft}p{0.14\textwidth}}
 \newcolumntype{R}{p{0.8\textwidth}}
 \newcommand\VRule{\color{lightgray}\vrule width 0.5pt}
+\pagebreak
  
 \begin{document}
 \maketitle
@@ -34,13 +42,13 @@ full-stack developer position.
  
 \section*{Professional Experience}
 \begin{tabular}{L!{\VRule}R}
-2018--2019 & {\bf A2Z Cloud | Business Applications Developer.}\\ 
+2018--2019 & {\bf A2Z Cloud | Business Applications Developer.}\\
                    & Placement year taken as part of my degree. In my role I would be configuring, automating, and integrating various Zoho business applications. 
                       Initially I was developing using Zoho's Javascript-based proprietary language, \textit{Deluge}. During the last few months of my placement I was
                       developing data-mapping middlewares using NodeJS, to request data from client systems and map it to a format that their Zoho system could 
                       receive. Other responsibilities included being on-site with clients doing requirements gathering sessions, in addition to demonstrating my 
-                      development progress to them over weekly online meetings.\\
-[10pt]
+                      development progress to them over weekly online meetings.\\ [8pt]
+                      
 2015--2016 & {\bf The Regal Stowmarket | Customer Assisstant.}\\ 
                    & Part-time job during college. Responsibilities included selling box office tickets, answering calls, working behind the bar, and helping customers with any issues 
                        they may have. Efficient communication was essential due to the fact that there would only be 3 staff members running the cinema at any one time. Being part 
@@ -61,10 +69,12 @@ full-stack developer position.
                      \begin{tabular}[]{lll}
                      English: B &  Core Science: B & ICT: Pass \\ 
                      Maths: B & Additional Science: B & History: A \\  
-                     Religious Studies: A*  & Business Studies: B & Graphics: C
+                     Religious Studies: A*  & Business Studies: B & Graphics: C\\
                      \end{tabular}
 \end{tabular}
- 
+
+\pagebreak
+\vspace*{2cm}
 \section*{Skills Profile}
 During my degree, I have gained many skills around the key areas of software development. From coding foundations such as algorithms and data structures, to more advanced software design such as SOLID principles and design patterns. I have also had the opportunity to use these skills in many team environments, where we were encouraged to utilise various agile methodologies such as scrum. As a result of my degree I have the ability to confidently and independently tackle new problems, allowing me to learn more every day. With a passion for web development, I have focused my learning on full-stack development - including but not limited to NodeJS,****  \newline \newline In 2016, I was able to use the skills I had learnt in an industry environment - automating and integrating business applications for clients. This experience was invaluable in helping me understand the wider impact that software has on businesses, in addition to putting my development and system design skills into practice. I was given a high level of responsibility, directly demonstrating my solutions to clients over online meetings on a weekly basis. On a personal level my placement year improved my confidence and has helped with my ability to approach new challenges.
 
@@ -75,4 +85,5 @@ Outside of software development I have a keen interest in reading fiction books,
 \section*{References}
 References available on request.
 
+\cfoot{\thepage\ of \pageref{LastPage}}
 \end{document}
